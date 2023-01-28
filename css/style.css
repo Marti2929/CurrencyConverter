@@ -1,0 +1,64 @@
+.body {
+    font-family: 'Lato', sans-serif;
+    background-color: hsl(0, 0%, 30%);
+}
+
+.fieldset {
+    background-color: hsl(0, 0%, 20%);
+    border-radius: 20px;
+    max-width: 500px;
+    margin: 50px auto;
+    border: 5px double hsl(43, 95%, 44%);
+}
+
+.legend {
+    margin: 0 auto;
+    color: hsl(43, 95%, 44%);
+    background-color: hsl(0, 0%, 20%);
+    border-radius: 5px;
+    padding: 20px;
+    border-style: none;
+    border: 4px double hsl(43, 95%, 44%);
+    font-weight: bold;
+}
+
+.label {
+    color: hsl(43, 95%, 44%);
+    text-align: center;
+}
+
+.button {
+    padding: 8px 12px;
+    width: 100%;
+    margin: 20px 0;
+    font-weight: bold;
+    color: hsl(0, 0%, 10%);
+    background-color: hsl(43, 74%, 49%);
+    border-radius: 10px;
+    border-style: none;
+    box-shadow: 0 0 4px 4px hsl(43, 74%, 49%);
+}
+
+.button:hover {
+    background-color: hsl(43, 70%, 46%);
+    box-shadow: 0 0 4px 4px hsl(43, 70%, 46%);
+}
+
+.button:active {
+    background-color: hsl(43, 100%, 41%);
+    box-shadow: 0 0 4px 4px hsl(43, 100%, 41%);
+}
+
+.field {
+    background-color: hsl(0, 0%, 50%);
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 8px;
+    max-width: 120px;
+}
+
+.field:focus {
+    outline-style: none;
+    box-shadow: 3px 3px 8px 1px hsl(43, 100%, 41%);
+}

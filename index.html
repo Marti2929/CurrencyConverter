@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework4-Kantor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/boxmodel.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <script defer src="js/script.js"></script>
+</head>
+
+<body class="body">
+    <fieldset class="fieldset">
+        <legend class="legend">Przelicznik walut</legend>
+        <p class="label">
+            <label>
+                Polski złoty<br>
+                <input type="number" name="pln" min="1" value="1" required autofocus class="js-pln field">
+            </label>
+        </p>
+        <p class="label">
+            Kurs<br>
+            <input type="number" name="rate" value="4.7" readonly class="js-rate field">
+        </p>
+        <p>
+            <button class="button">Przelicz</button>
+        </p>
+        <p class="label">
+            <label>
+                <p class="label">
+                    Euro
+                </p>
+                <p class="js-euro field">N/A</p>
+            </label>
+        </p>
+    </fieldset>
+</body>
+
+</html>
