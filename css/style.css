@@ -1,6 +1,8 @@
 .body {
     font-family: 'Lato', sans-serif;
-    background-color: hsl(0, 0%, 30%);
+    background-image: url("../images/BackgroundMoney.jpg");
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .fieldset {
