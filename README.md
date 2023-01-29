@@ -9,7 +9,9 @@ It's simply currency converter letting convert PLN value to Euro value with the 
 
 ## Link
 
-https://marti2929.github.io/CurrencyConverter/
+Please find demo in the link below.
+
+[Demo](https://marti2929.github.io/CurrencyConverter/)
 
 ### Technologies
 - BEM
