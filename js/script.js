@@ -1,13 +1,19 @@
-let plnElement = document.querySelector(".js-pln");
-let rateElement = document.querySelector(".js-rate");
-let button = document.querySelector(".button");
-let euroElement = document.querySelector(".js-euro");
+const calculate = () => {
+    const plnElement = document.querySelector(".js-pln");
+    const rateElement = document.querySelector(".js-rate");
+    const euroElement = document.querySelector(".js-euro");
 
-button.addEventListener("click", () => {
-    let pln = plnElement.value;
-    let rate = rateElement.value;
+    const pln = plnElement.value;
+    const rate = rateElement.value;
 
-    euro =  pln * rate;
-    
+    euro = pln * rate;
+
     euroElement.innerText = euro.toFixed(2);
-})
+}
+
+const action = () => {
+    const button = document.querySelector(".button");
+    button.addEventListener("click", calculate);
+}
+
+action();
