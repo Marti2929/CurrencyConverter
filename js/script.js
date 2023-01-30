@@ -1,19 +1,25 @@
-const calculate = () => {
-    const plnElement = document.querySelector(".js-pln");
-    const rateElement = document.querySelector(".js-rate");
-    const euroElement = document.querySelector(".js-euro");
+{
+    const calculate = () => {
+        const plnElement = document.querySelector(".js-pln");
+        const rateElement = document.querySelector(".js-rate");
 
-    const pln = plnElement.value;
-    const rate = rateElement.value;
+        const pln = plnElement.value;
+        const rate = rateElement.value;
 
-    euro = pln * rate;
+        euro = pln * rate;
 
-    euroElement.innerText = euro.toFixed(2);
+        result(euro);
+    };
+
+    const result = (euro) => {
+        const euroElement = document.querySelector(".js-euro");
+        euroElement.innerText = euro.toFixed(2);
+    };
+
+    const init = () => {
+        const button = document.querySelector(".js-button");
+        button.addEventListener("click", calculate);
+    };
+
+    init();
 }
-
-const action = () => {
-    const button = document.querySelector(".button");
-    button.addEventListener("click", calculate);
-}
-
-action();
