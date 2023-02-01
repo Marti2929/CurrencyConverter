@@ -55,7 +55,8 @@
     background-color: hsl(0, 0%, 50%);
     font-weight: bold;
     text-align: center;
-    margin: 0 auto;
+    margin: 8px auto;
+    width: 100%;    
     max-width: 120px;    
     border-radius: 8px;
     border-width: 2px;

@@ -26,22 +26,28 @@
         <p class="label">
             <label>
                 Polski złoty<br>
-                <input type="number" name="pln" min="1" value="1" required autofocus class="js-pln field">
+                <input type="number" name="pln" min="1" value="0" required autofocus class="js-pln field">
             </label>
         </p>
         <p class="label">
-            Kurs<br>
-            <input type="number" name="rate" value="4.7" readonly class="js-rate field">
+            <label>
+                Waluta<br>
+                <select class="field js-currency">
+                    <option value="euro"> Euro </option>
+                    <option value="dollar"> Dolar </option>
+                    <option value="funt"> Funt </option>
+                </select>
+            </label>
         </p>
         <p>
             <button class="button js-button">Przelicz</button>
         </p>
         <p class="label">
             <label>
-                <p class="label">
-                    Euro
+                Wynik
+                <p class="js-result field js-fieldResult">
+                    N/A
                 </p>
-                <p class="js-euro field">N/A</p>
             </label>
         </p>
     </fieldset>

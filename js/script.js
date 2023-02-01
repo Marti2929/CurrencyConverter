@@ -1,19 +1,32 @@
 {
     const calculate = () => {
         const plnElement = document.querySelector(".js-pln");
-        const rateElement = document.querySelector(".js-rate");
-
+        const currencyElement = document.querySelector(".js-currency");
+        
         const pln = plnElement.value;
-        const rate = rateElement.value;
+        
+        let currency = currencyElement.value;
 
-        euro = pln * rate;
+        switch (currency) {
+            case "euro":
+                rate = 4.7;
+                break;
+            case "dollar":
+                rate = 4.31;
+                break;
+            case "funt":
+                rate = 5.3;
+                break;
+        }
+        
+        result = pln / rate;
 
-        result(euro);
+        resultFinal(result);
     };
 
-    const result = (euro) => {
-        const euroElement = document.querySelector(".js-euro");
-        euroElement.innerText = euro.toFixed(2);
+    const resultFinal = (result) => {
+        const resultElement = document.querySelector(".js-result");
+        resultElement.innerText = result.toFixed(2);
     };
 
     const init = () => {
