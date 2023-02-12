@@ -1,10 +1,23 @@
 {
-    const calculate = () => {
+    const updateResultText = (result) => {
+        const resultElement = document.querySelector(".js-result");
+
+        resultElement.innerText = result.toFixed(2);
+    };
+
+    const calculate = (rate) => {
         const plnElement = document.querySelector(".js-pln");
-        const currencyElement = document.querySelector(".js-currency");
-        
+
         const pln = plnElement.value;
-        
+
+        result = pln / rate;
+
+        updateResultText(result);
+    };
+    
+    const getCurrencyRate = () => {
+        const currencyElement = document.querySelector(".js-currency");
+
         let currency = currencyElement.value;
 
         switch (currency) {
@@ -18,20 +31,14 @@
                 rate = 5.3;
                 break;
         }
-        
-        result = pln / rate;
 
-        resultFinal(result);
+        calculate(rate);
     };
-
-    const resultFinal = (result) => {
-        const resultElement = document.querySelector(".js-result");
-        resultElement.innerText = result.toFixed(2);
-    };
-
+    
     const init = () => {
         const button = document.querySelector(".js-button");
-        button.addEventListener("click", calculate);
+
+        button.addEventListener("click", getCurrencyRate);
     };
 
     init();
