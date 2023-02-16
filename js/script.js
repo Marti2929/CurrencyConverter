@@ -7,38 +7,31 @@
 
     const calculate = (rate) => {
         const plnElement = document.querySelector(".js-pln");
+        const currencyElement = document.querySelector(".js-currency");
 
         const pln = plnElement.value;
+        const currency = currencyElement.value;
 
-        result = pln / rate;
+        const result = pln / getCurrencyRate(currency);
 
         updateResultText(result);
     };
     
-    const getCurrencyRate = () => {
-        const currencyElement = document.querySelector(".js-currency");
-
-        let currency = currencyElement.value;
-
+    const getCurrencyRate = (currency) => {
         switch (currency) {
             case "euro":
-                rate = 4.7;
-                break;
+                return 4.7;
             case "dollar":
-                rate = 4.31;
-                break;
+                return 4.31;
             case "funt":
-                rate = 5.3;
-                break;
+                return 5.3;
         }
-
-        calculate(rate);
     };
     
     const init = () => {
         const button = document.querySelector(".js-button");
 
-        button.addEventListener("click", getCurrencyRate);
+        button.addEventListener("click", calculate);
     };
 
     init();
